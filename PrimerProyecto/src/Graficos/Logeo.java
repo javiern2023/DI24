@@ -14,6 +14,8 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
+import BaseDatos.GestionBD;
+
 public class Logeo extends JFrame implements ActionListener{
 
 	private static final long serialVersionUID = 1L;
@@ -26,6 +28,7 @@ public class Logeo extends JFrame implements ActionListener{
 	private final String USUARIO="admin";
 	private final String PASS="123";
 	private SegundaVentana sv;
+	private GestionBD gbd;
 
 	/**
 	 * Launch the application.
@@ -47,6 +50,7 @@ public class Logeo extends JFrame implements ActionListener{
 	 * Create the frame.
 	 */
 	public Logeo() {
+		gbd = new GestionBD();
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -106,12 +110,13 @@ public class Logeo extends JFrame implements ActionListener{
 				JOptionPane.showMessageDialog(null, "Algún valor vacío");
 			}
 			else {
-				if(tfNombre.getText().equals(USUARIO) && pfContrasenia.getText().equals(PASS)) {
+				//if(tfNombre.getText().equals(USUARIO) && pfContrasenia.getText().equals(PASS)) {
+				if(gbd.buscarUsuario(tfNombre.getText(), pfContrasenia.getText())) {
 					sv = new SegundaVentana();
 					sv.setVisible(true);
 					dispose();
-					
 				}
+				else JOptionPane.showMessageDialog(null, "Usuario no existe");
 			}
 		}
 		if (ob.equals(btnLimpiar)) {
