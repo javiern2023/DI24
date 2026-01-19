@@ -1,0 +1,19 @@
+/* BOTONES GENERALES */
+.button {
+    -fx-background-color: #2E86C1;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+/* BOTÓN AL PASAR EL RATÓN */
+.button:hover {
+    -fx-background-color: #1B4F72;
+}
+
+/* BOTÓN AL PRESIONAR */
+.button:pressed {
+    -fx-background-color: #154360;
+}
