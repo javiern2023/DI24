@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.elementosjavafx.PrincipalController">
+   <children>
+      <BorderPane layoutX="-4.0" layoutY="-2.0" prefHeight="406.0" prefWidth="607.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="ARCHIVO">
+                  <items>
+                        <MenuItem mnemonicParsing="false" text="ABRIR" />
+                    <MenuItem mnemonicParsing="false" text="GUARDAR" />
+                        <MenuItem mnemonicParsing="false" text="CERRAR" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="EDICIÓN">
+                  <items>
+                        <MenuItem mnemonicParsing="false" text="COPIAR" />
+                        <MenuItem mnemonicParsing="false" text="PEGAR" />
+                    <MenuItem mnemonicParsing="false" text="CORTAR" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="CARGO">
+                    <items>
+                        <MenuItem fx:id="menuProfesor" mnemonicParsing="false" onAction="#mostrarProfesor" text="PROFESOR" />
+                      <MenuItem fx:id="menuAlumno" mnemonicParsing="false" onAction="#mostrarAlumno" text="ALUMNO" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <AnchorPane fx:id="panelCentral" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

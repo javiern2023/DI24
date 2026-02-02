@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.elementosjavafx.AlumnoController">
+   <children>
+      <Label layoutX="137.0" layoutY="68.0" prefHeight="64.0" prefWidth="372.0" text="PANEL ALUMNO" textAlignment="JUSTIFY" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="38.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="checkAlumnos" layoutX="56.0" layoutY="158.0" onAction="#cargarNotas" prefWidth="150.0" />
+      <TableView fx:id="tablaAlumnos" layoutX="242.0" layoutY="132.0" prefHeight="237.0" prefWidth="306.0">
+        <columns>
+          <TableColumn fx:id="colNombre" prefWidth="132.0" text="NOMBRE" />
+          <TableColumn fx:id="colPass" editable="false" prefWidth="173.0" text="CONTRASEÑA" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
