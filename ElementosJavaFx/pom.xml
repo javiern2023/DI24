@@ -25,12 +25,16 @@
             <artifactId>javafx-fxml</artifactId>
             <version>21.0.6</version>
         </dependency>
+<<<<<<< HEAD
         <!-- CONECTOR MySQL -->
         <dependency>
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
             <version>8.3.0</version>
         </dependency>
+=======
+
+>>>>>>> eb46d1f8bc181bb332288333baa76b966f4c6eb1
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>

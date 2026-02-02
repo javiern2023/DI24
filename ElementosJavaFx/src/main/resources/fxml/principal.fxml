@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< HEAD
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
@@ -39,5 +40,26 @@
             <AnchorPane fx:id="panelCentral" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
          </center>
       </BorderPane>
+=======
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.elementosjavafx.PrincipalController">
+   <children>
+      <CheckBox fx:id="cbPrimero" layoutX="66.0" layoutY="69.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="73.0" text="Primero" />
+      <ChoiceBox fx:id="choiceNombres" layoutX="225.0" layoutY="101.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboNombres" layoutX="416.0" layoutY="101.0" prefWidth="150.0" />
+      <CheckBox fx:id="cbSegundo" layoutX="66.0" layoutY="105.0" mnemonicParsing="false" text="Segundo" />
+      <DatePicker fx:id="miDatePicker" layoutX="59.0" layoutY="188.0" onAction="#mostrarFecha" />
+      <RadioButton fx:id="rbTercero" layoutX="66.0" layoutY="144.0" mnemonicParsing="false" text="Tercero" />
+      <Slider fx:id="slider" layoutX="57.0" layoutY="248.0" prefHeight="14.0" prefWidth="321.0" />
+      <Spinner fx:id="spinner" layoutX="352.0" layoutY="188.0" />
+>>>>>>> eb46d1f8bc181bb332288333baa76b966f4c6eb1
    </children>
 </AnchorPane>

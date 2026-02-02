@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Es el archivo que define un módulo Java. Desde Java 9 existe el sistema de módulos llamado:
 
 JPMS (Java Platform Module System) Antes todo era un gran “paquete global”. Ahora Java quiere que cada
@@ -11,6 +12,12 @@ module com.example.elementosjavafx {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
+=======
+module com.example.elementosjavafx {
+    requires javafx.controls;
+    requires javafx.fxml;
+
+>>>>>>> eb46d1f8bc181bb332288333baa76b966f4c6eb1
 
     opens com.example.elementosjavafx to javafx.fxml;
     exports com.example.elementosjavafx;
