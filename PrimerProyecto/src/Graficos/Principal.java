@@ -26,7 +26,7 @@ public class Principal extends JFrame implements ActionListener{
 	private JPasswordField pass;
 	private JButton btnSalir;
 	private JButton btnEntrar;
-	private JComboBox comboBox;
+	private JComboBox<String> selectUsuario;
 	private JButton btnLimpiar;
 	private String usuario = "javier";
 	private String cont = "123";
@@ -98,13 +98,13 @@ public class Principal extends JFrame implements ActionListener{
 		lblCargo.setBounds(47, 144, 96, 19);
 		contentPane.add(lblCargo);
 		
-		comboBox = new JComboBox();
-		comboBox.setBounds(147, 142, 113, 22);
-		comboBox.addItem("Selecciona una opcion");
-		comboBox.addItem("Alumn@");
-		comboBox.addItem("Profesora");
+		selectUsuario = new JComboBox<>();
+		selectUsuario.setBounds(147, 142, 113, 22);
+		selectUsuario.addItem("Selecciona una opcion");
+		selectUsuario.addItem("Alumn@");
+		selectUsuario.addItem("Profesora");
 		
-		contentPane.add(comboBox);
+		contentPane.add(selectUsuario);
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
@@ -134,7 +134,7 @@ public class Principal extends JFrame implements ActionListener{
 				JOptionPane.showMessageDialog(null, "Valores incorrectos");
 			}
 			else {
-				comboBox.getSelectedItem().equals("Alumn@");
+				selectUsuario.getSelectedItem().equals("Alumn@");
 			}
 		}
 	}
