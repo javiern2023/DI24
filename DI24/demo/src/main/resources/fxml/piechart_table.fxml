@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="grafica.demo.Controller"
+      spacing="10" style="-fx-padding: 20">
+
+    <!-- Botón para cargar gráfico -->
+    <Button fx:id="btnCargar" text="Cargar Gráfico" />
+
+    <!-- PieChart -->
+    <PieChart fx:id="pieChart" title="Quesito" />
+
+    <!-- TableView -->
+    <TableView fx:id="tableView">
+        <columns>
+            <TableColumn fx:id="colNombre" text="Parte" />
+            <TableColumn fx:id="colValor" text="Valor" />
+        </columns>
+    </TableView>
+
+</VBox>
