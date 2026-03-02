@@ -1,15 +1,10 @@
+# main.py
 import sys
-from PyQt6 import uic
-from PyQt6.QtWidgets import QApplication, QMainWindow
-
-class PruebaWindow(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        # Cargar la ventana diseñada en Qt Designer
-        uic.loadUi("ui/Prueba.ui", self)
+from PyQt6.QtWidgets import QApplication
+from login import VentanaLogin  # Importa la clase de login
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    window = PruebaWindow()
-    window.show()
+    ventana = VentanaLogin()
+    ventana.show()
     sys.exit(app.exec())
