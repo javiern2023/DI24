@@ -10,8 +10,8 @@ public class primeraVentanaCodigo extends JFrame{
 		//setSize(600,400); //ancho y alto de la ventana
 		//setLocation(400,200); //localización de la ventana en nuestra pantalla
 		setTitle("Mi primera ventana"); //título de la ventana
-		setResizable(true); //si se puede o no redimensionar la ventana
-		setBounds(400,200,600,400); //localización y tamaño.
+		setResizable(false); //si se puede o no redimensionar la ventana
+		setBounds(400,200,100,400); //localización y tamaño.
 		//setExtendedState(Frame.MAXIMIZED_BOTH); //Ventana a tamaño completo
 	}
 }
