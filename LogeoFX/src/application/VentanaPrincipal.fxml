@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VentanaPrincipalController">
+   <children>
+      <Button fx:id="btnSalir" layoutX="666.0" layoutY="359.0" mnemonicParsing="false" onAction="#actionSalir" prefHeight="26.0" prefWidth="111.0" text="SALIR" />
+      <Button fx:id="btnInsetar" layoutX="453.0" layoutY="359.0" mnemonicParsing="false" onAction="#actionInsertar" prefHeight="26.0" prefWidth="90.0" text="INSERTAR" />
+      <ScrollPane hbarPolicy="NEVER" layoutX="325.0" layoutY="6.0" prefHeight="334.0" prefWidth="459.0" vbarPolicy="ALWAYS">
+         <content>
+            <TableView fx:id="tabla" prefHeight="323.0" prefWidth="446.0">
+              <columns>
+                <TableColumn fx:id="columExpediente" prefWidth="140.79998475313187" text="EXPEDIENTE" />
+                <TableColumn fx:id="columApellidos" prefWidth="167.2000274658203" text="APELLIDOS" />
+                  <TableColumn fx:id="columNombre" prefWidth="137.60003662109375" text="NOMBRE" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label layoutX="38.0" layoutY="83.0" prefHeight="18.0" prefWidth="90.0" text="EXPEDIENTE" />
+      <Label layoutX="38.0" layoutY="141.0" prefHeight="18.0" prefWidth="71.0" text="APELLIDOS" />
+      <Label layoutX="38.0" layoutY="200.0" prefHeight="18.0" prefWidth="60.0" text="NOMBRE" />
+      <TextField fx:id="tfExpediente" layoutX="129.0" layoutY="80.0" />
+      <TextField fx:id="tfApellidos" layoutX="129.0" layoutY="138.0" />
+      <TextField fx:id="tfNombre" layoutX="130.0" layoutY="197.0" />
+      <Button fx:id="btnLimpiar" layoutX="130.0" layoutY="269.0" mnemonicParsing="false" onAction="#actionLimpiar" prefHeight="26.0" prefWidth="150.0" text="LIMPIAR" />
+      <Button fx:id="btnEliminiar" layoutX="559.0" layoutY="359.0" mnemonicParsing="false" onAction="#actionEliminar" prefHeight="26.0" prefWidth="90.0" text="ELIMINAR" />
+   </children>
+</AnchorPane>
