@@ -29,6 +29,7 @@ public class VentanaLogeo extends JFrame implements ActionListener {
 	private JButton btnLimpiar;
 	private JButton btnSalir;
 	private GestionBaseDatos gbd;
+	private VentanaPrincipal vp;
 	/**
 	 * Launch the application.
 	 */
@@ -113,6 +114,9 @@ public class VentanaLogeo extends JFrame implements ActionListener {
 			gbd = new GestionBaseDatos();
 			if(gbd.comprobarUsuario(usuario, pass)) {
 				JOptionPane.showMessageDialog(null,"Bienvenido");
+				vp = new VentanaPrincipal();
+				vp.setVisible(true);
+				this.dispose();
 			}
 			else {
 				JOptionPane.showMessageDialog(null,"Usuario o contraseña incorrectos");
