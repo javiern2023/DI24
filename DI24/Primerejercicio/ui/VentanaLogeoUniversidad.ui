@@ -13,6 +13,8 @@
   <property name="windowTitle">
    <string>Ventana de Logeo</string>
   </property>
+
+  <!-- Botones -->
   <widget class="QPushButton" name="btnSalir">
    <property name="geometry">
     <rect>
@@ -39,19 +41,6 @@
     <string>ENTRAR</string>
    </property>
   </widget>
-  <widget class="Line" name="line">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>240</y>
-     <width>581</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
   <widget class="QPushButton" name="btnRegistro">
    <property name="geometry">
     <rect>
@@ -65,6 +54,8 @@
     <string>REGISTRO</string>
    </property>
   </widget>
+
+  <!-- Etiquetas y campos -->
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
@@ -127,6 +118,8 @@
     <enum>QLineEdit::Password</enum>
    </property>
   </widget>
+
+  <!-- ComboBox con solo la opción inicial -->
   <widget class="QComboBox" name="comboBox">
    <property name="geometry">
     <rect>
@@ -141,17 +134,9 @@
      <string>Seleccione una opción</string>
     </property>
    </item>
-   <item>
-    <property name="text">
-     <string>Profesor</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Alumno</string>
-    </property>
-   </item>
   </widget>
+
+  <!-- Logo -->
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
